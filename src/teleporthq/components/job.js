@@ -12,15 +12,11 @@ const Job = (props) => {
           <div className="job-jobinfo">
             <div className="job-top">
               <div className="job-title-new">
-                <span className="job-text MobileH3">
-                  <span>Accounting Manager</span>
-                </span>
+                <span className="job-text MobileH3">Hi MF!!</span>
               </div>
-              <span className="job-text02">
-                <span>$85k – $100k</span>
-              </span>
+              <span className="job-text01">$85k – $500k</span>
             </div>
-            <span className="job-text04 ParagraphP14">
+            <span className="job-text02 ParagraphP14">
               <span>
                 The staff accountant&apos;s responsibilities include maintaining
                 financial records and ...
@@ -29,7 +25,7 @@ const Job = (props) => {
           </div>
           <div className="job-company">
             <div className="job-companyinfo">
-              <span className="job-text06">
+              <span className="job-text04">
                 <span>Clean Krew LLC</span>
               </span>
               <div className="job-address">
@@ -40,7 +36,7 @@ const Job = (props) => {
                     className="job-subtract"
                   />
                 </div>
-                <span className="job-text08 ParagraphP14">
+                <span className="job-text06 ParagraphP14">
                   <span>New York, NY</span>
                 </span>
               </div>
@@ -52,7 +48,7 @@ const Job = (props) => {
                     className="job-subtract1"
                   />
                 </div>
-                <span className="job-text10 ParagraphP14">
+                <span className="job-text08 ParagraphP14">
                   <span>2 hours ago</span>
                 </span>
               </div>
