@@ -7,6 +7,7 @@
   --dl-color-gray-500: #595959;
   --dl-color-gray-700: #999999;
   --dl-color-gray-900: #D9D9D9;
+  --dl-color-gray-gray: rgba(127, 139, 153, 1);
   --dl-size-size-large: 144px;
   --dl-size-size-small: 48px;
   --dl-color-danger-300: #A22020;
@@ -27,6 +28,8 @@
   --dl-color-success-700: #4CC366;
   --dl-size-size-xxlarge: 288px;
   --dl-size-size-maxwidth: 1400px;
+  --dl-color-default-white: rgba(255, 255, 255, 1);
+  --dl-color-gray-graydark: rgba(56, 62, 71, 1);
   --dl-radius-radius-round: 50%;
   --dl-space-space-halfunit: 8px;
   --dl-space-space-sixunits: 96px;
@@ -37,6 +40,7 @@
   --dl-space-space-fiveunits: 80px;
   --dl-space-space-fourunits: 64px;
   --dl-space-space-threeunits: 48px;
+  --dl-color-default-bluestatic: rgba(11, 113, 217, 1);
   --dl-space-space-oneandhalfunits: 24px;
 }
 .button {
@@ -89,6 +93,13 @@
   text-transform: none;
   text-decoration: none;
 }
+.ParagraphP14 {
+  font-size: 14px;
+  font-style: normal;
+  font-family: Inter;
+  font-weight: 400px;
+  font-stretch: normal;
+}
 .Content {
   font-size: 16px;
   font-family: Inter;
@@ -96,4 +107,11 @@
   line-height: 1.15;
   text-transform: none;
   text-decoration: none;
+}
+.MobileH3 {
+  font-size: 18px;
+  font-style: normal;
+  font-family: Inter;
+  font-weight: 700px;
+  font-stretch: normal;
 }

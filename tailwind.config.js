@@ -2,6 +2,10 @@ module.exports = {
   "theme": {
     "extend": {
       "colors": {
+        "default": {
+          "white": "rgba(255, 255, 255, 1)",
+          "bluestatic": "rgba(11, 113, 217, 1)"
+        },
         "Danger": {
           "300": "#A22020",
           "500": "#BF2626",
@@ -22,8 +26,10 @@ module.exports = {
           "500": "#595959",
           "700": "#999999",
           "900": "#D9D9D9",
+          "graydark": "rgba(56, 62, 71, 1)",
           "White": "#FFFFFF",
-          "Black": "#000000"
+          "Black": "#000000",
+          "gray": "rgba(127, 139, 153, 1)"
         },
         "foreground": "#000000",
         "background": "#FFFFFF"
