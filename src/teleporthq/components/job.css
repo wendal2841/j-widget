@@ -113,23 +113,10 @@
   align-items: center;
   flex-shrink: 0;
 }
-.job-mapmarker {
-  width: 16px;
-  height: 16px;
-  display: flex;
-  align-items: flex-start;
-  flex-shrink: 0;
-}
-.job-subtract {
-  top: 1.3330078125px;
-  left: 2.666656494140625px;
-  width: 11px;
-  height: 13px;
-  position: absolute;
-}
 .job-text06 {
   color: var(--dl-color-gray-graydark);
   height: auto;
+  display: none;
   flex-grow: 1;
   text-align: left;
   line-height: 20px;
@@ -140,21 +127,6 @@
   align-self: stretch;
   align-items: center;
   flex-shrink: 0;
-}
-.job-clockfilled {
-  width: 16px;
-  height: 16px;
-  display: flex;
-  overflow: hidden;
-  align-items: flex-start;
-  flex-shrink: 0;
-}
-.job-subtract1 {
-  top: 1.3333333730697632px;
-  left: 1.3333333730697632px;
-  width: 13px;
-  height: 13px;
-  position: absolute;
 }
 .job-text08 {
   color: var(--dl-color-gray-gray);
@@ -172,5 +144,8 @@
   .job-frame4 {
     width: 100%;
     height: auto;
+  }
+  .job-text06 {
+    display: flex;
   }
 }

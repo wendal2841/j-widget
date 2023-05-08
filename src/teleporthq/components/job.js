@@ -29,25 +29,11 @@ const Job = (props) => {
                 <span>Clean Krew LLC</span>
               </span>
               <div className="job-address">
-                <div className="job-mapmarker">
-                  <img
-                    alt="Subtract1516"
-                    src="/playground_assets/Subtract1516-tup8.svg"
-                    className="job-subtract"
-                  />
-                </div>
                 <span className="job-text06 ParagraphP14">
                   <span>New York, NY</span>
                 </span>
               </div>
               <div className="job-date">
-                <div className="job-clockfilled">
-                  <img
-                    alt="SubtractI152"
-                    src="/playground_assets/SubtractI152-dv7d.svg"
-                    className="job-subtract1"
-                  />
-                </div>
                 <span className="job-text08 ParagraphP14">
                   <span>2 hours ago</span>
                 </span>
