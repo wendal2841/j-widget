@@ -64,8 +64,8 @@ module.exports = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: 'app2',
-      filename: 'remoteEntry.js',
+      name: 'jWidget',
+      filename: 'jWidget.js',
       exposes: {
         './Banner': './src/teleporthq/components/banner',
         './Job': './src/teleporthq/components/job',
