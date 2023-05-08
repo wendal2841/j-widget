@@ -68,6 +68,7 @@ module.exports = {
       filename: 'remoteEntry.js',
       exposes: {
         './Banner': './src/teleporthq/components/banner',
+        './Job': './src/teleporthq/components/job',
       },
       shared: {
         react: { singleton: true },
