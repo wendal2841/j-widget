@@ -1,7 +1,6 @@
 const { ModuleFederationPlugin } = require('webpack').container;
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const Banner = require("./src/teleporthq/components/banner");
 
 module.exports = {
   mode: 'development',

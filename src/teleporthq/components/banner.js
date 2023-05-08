@@ -3,6 +3,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import './banner.css'
+import '../style.css'
 
 const Banner = (props) => {
   return (
