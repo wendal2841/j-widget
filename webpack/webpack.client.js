@@ -1,15 +1,22 @@
-const { ModuleFederationPlugin } = require('webpack').container;
 const path = require('path');
+const moduleFederationPlugin = require('./module-federation');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  mode: 'development',
-  devServer: {
-    static: path.join(__dirname, 'dist'),
-    port: 3002,
+  name: 'client',
+  target: 'web',
+  mode: 'production',
+  devtool: undefined,
+  entry: {
+    clientAppEntrypoint: [
+      '@babel/polyfill',
+    ],
   },
   output: {
-    publicPath: 'auto',
+    path: path.resolve(__dirname, '../dist/client'),
+    filename: '[name].js',
+    chunkFilename: '[name].js',
+    publicPath: 'http://localhost:3002/static/',
   },
   module: {
     rules: [
@@ -43,11 +50,8 @@ module.exports = {
               {
                 loader: 'css-loader',
                 options: {
-                  modules: {
-                    auto: resPath => resPath.includes('.scss'),
-                    localIdentName: '[hash:base64:6]',
-                  },
-                },
+                  modules: false
+              },
               },
               {
                 loader: 'postcss-loader',
@@ -63,18 +67,7 @@ module.exports = {
     ],
   },
   plugins: [
-    new ModuleFederationPlugin({
-      name: 'jWidget',
-      filename: 'jWidget.js',
-      exposes: {
-        './Banner': './src/teleporthq/components/banner',
-        './Job': './src/teleporthq/components/job',
-      },
-      shared: {
-        react: { singleton: true },
-        'react-dom': { singleton: true }
-      },
-    }),
+    ...moduleFederationPlugin.client,
     new MiniCssExtractPlugin({
       filename: '[name].css',
       chunkFilename: '[name].css',
